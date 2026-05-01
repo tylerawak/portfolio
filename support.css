@@ -90,9 +90,9 @@
   background: var(--second-bg-color);
   border: 1px solid rgba(255, 64, 0, 0.3);
   border-radius: 2rem;
-  overflow: hidden;
-  max-height: 85vh;
+  overflow-x: hidden;
   overflow-y: auto;
+  max-height: 85vh;
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
 }
