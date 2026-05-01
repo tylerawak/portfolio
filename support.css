@@ -53,6 +53,12 @@
   display: none;
 }
 
+.modal-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
+
 .modal-close {
   position: absolute;
   top: -1.6rem;
@@ -71,7 +77,6 @@
   transition: 0.2s ease;
   padding: 0;
   box-shadow: none;
-  flex-shrink: 0;
   z-index: 10;
 }
 
@@ -85,27 +90,19 @@
   background: var(--second-bg-color);
   border: 1px solid rgba(255, 64, 0, 0.3);
   border-radius: 2rem;
-  padding: 3rem;
-  width: 100%;
-  max-width: 700px;
-  max-height: 90vh;
+  overflow: hidden;
+  max-height: 85vh;
   overflow-y: auto;
-  position: relative;
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
 }
 
-.modal-box::-webkit-scrollbar {
-  width: 6px;
-}
+.modal-box::-webkit-scrollbar { width: 6px; }
+.modal-box::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+.modal-box::-webkit-scrollbar-track { background: transparent; }
 
-.modal-box::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 3px;
-}
-
-.modal-box::-webkit-scrollbar-track {
-  background: transparent;
+.modal-box iframe {
+  display: block;
 }
 
 .support-desc {
