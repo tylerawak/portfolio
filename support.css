@@ -36,6 +36,11 @@
   margin-top: 0.5rem;
 }
 
+.support-form {
+  width: 100%;
+  max-width: 700px;
+}
+
 .support-desc {
   font-size: 1.6rem;
   font-weight: 400;
