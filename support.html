@@ -35,9 +35,88 @@
     <div class="modal-wrapper">
       <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
       <div class="modal-box">
-        <div class="modal-scroll">
-          <iframe src="https://form.jotform.com/261205147865054" title="Remote Support Request" style="width:100%;height:1500px;border:none;" scrolling="no"></iframe>
-        </div>
+        <form class="support-form" id="support-form" action="https://submit.jotform.com/submit/261205147865054" method="post" enctype="multipart/form-data" accept-charset="utf-8" autocomplete="on">
+
+          <!-- Hidden fields required by Jotform -->
+          <input type="hidden" name="formID" value="261205147865054">
+          <input type="hidden" name="jsExecutionTracker" value="build-date-1777910538615">
+          <input type="hidden" name="submitSource" value="unknown">
+          <input type="hidden" name="buildDate" value="1777910538615">
+          <input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload">
+          <input type="hidden" name="simple_spc" value="261205147865054">
+          <input type="text" name="website" value="" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="nf-header">
+            <h2>Remote Support Request</h2>
+            <p>Request remote tech support. Your privacy is protected, and all sessions are conducted remotely.</p>
+          </div>
+
+          <div class="nf-group">
+            <label for="nf-email">Email Address <span class="nf-req">*</span></label>
+            <input type="email" id="nf-email" name="q4_q4_email2" placeholder="example@example.com" required>
+          </div>
+
+          <div class="nf-row">
+            <div class="nf-group">
+              <label for="nf-device">Device Type</label>
+              <select id="nf-device" name="q5_q5_dropdown3">
+                <option value="">Please Select</option>
+                <option value="Windows PC">Windows PC</option>
+                <option value="Mac">Mac</option>
+                <option value="iPhone">iPhone</option>
+                <option value="Android">Android</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="nf-group">
+              <label for="nf-tool">Preferred Remote Support Tool</label>
+              <select id="nf-tool" name="q6_q6_dropdown4">
+                <option value="">Please Select</option>
+                <option value="Quick Assist (Windows only)">Quick Assist (Windows only)</option>
+                <option value="HelpWire">HelpWire</option>
+                <option value="RustDesk">RustDesk</option>
+                <option value="Not Sure">Not Sure</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="nf-group">
+            <label for="nf-issue">Issue Description</label>
+            <textarea id="nf-issue" name="q9_q9_textarea7" rows="5" placeholder="Describe your issue..."></textarea>
+          </div>
+
+          <div class="nf-row">
+            <div class="nf-group">
+              <label for="nf-urgency">Urgency</label>
+              <select id="nf-urgency" name="q10_q10_dropdown8">
+                <option value="">Please Select</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Critical">Critical</option>
+              </select>
+            </div>
+            <div class="nf-group">
+              <label for="nf-contact-time">Preferred Contact Time</label>
+              <input type="text" id="nf-contact-time" name="q11_q11_textbox9" placeholder="e.g. Weekdays after 5 pm">
+            </div>
+          </div>
+
+          <div class="nf-group">
+            <label for="nf-upload">
+              Upload Images
+              <span class="nf-sublabel">Attach screenshots or photos that show the issue.</span>
+            </label>
+            <label class="nf-file-label" for="nf-upload">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              <span id="nf-file-text">Choose files&hellip;</span>
+              <input type="file" id="nf-upload" name="q14_uploadImages[]" multiple accept=".jpg,.jpeg,.png,.gif">
+            </label>
+          </div>
+
+          <button type="submit" class="btn nf-submit">Request Support</button>
+
+        </form>
       </div>
     </div>
   </div>
