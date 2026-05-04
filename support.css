@@ -220,36 +220,6 @@
   color-scheme: dark;
 }
 
-/* Custom file input */
-.nf-file-label {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  border-radius: 0.8rem;
-  color: var(--text-dim);
-  font-size: 1.3rem;
-  padding: 1.2rem 1.4rem;
-  cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
-  flex-direction: row;
-}
-
-.nf-file-label:hover {
-  border-color: var(--main-color);
-  color: var(--text-color);
-}
-
-.nf-file-label i {
-  font-size: 1.5rem;
-  color: var(--main-color);
-  flex-shrink: 0;
-}
-
-.nf-file-label input[type="file"] {
-  display: none;
-}
 
 .nf-submit {
   align-self: flex-start;

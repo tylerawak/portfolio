@@ -35,7 +35,7 @@
     <div class="modal-wrapper">
       <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
       <div class="modal-box">
-        <form class="support-form" id="support-form" action="https://api.web3forms.com/submit" method="post" enctype="multipart/form-data">
+        <form class="support-form" id="support-form" action="https://api.web3forms.com/submit" method="post">
 
           <!-- Web3Forms config -->
           <input type="hidden" name="access_key" value="0d179e04-b535-4d61-8742-62f868dcbff7">
@@ -97,18 +97,6 @@
               <label for="nf-contact-time">Preferred Contact Time</label>
               <input type="text" id="nf-contact-time" name="Preferred Contact Time" placeholder="e.g. Weekdays after 5 pm">
             </div>
-          </div>
-
-          <div class="nf-group">
-            <label for="nf-upload">
-              Upload Images
-              <span class="nf-sublabel">Attach screenshots or photos that show the issue.</span>
-            </label>
-            <label class="nf-file-label" for="nf-upload">
-              <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              <span id="nf-file-text">Choose files&hellip;</span>
-              <input type="file" id="nf-upload" name="attachment" multiple accept=".jpg,.jpeg,.png,.gif">
-            </label>
           </div>
 
           <button type="submit" class="btn nf-submit">Request Support</button>
