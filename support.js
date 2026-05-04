@@ -6,6 +6,20 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active');
 };
 
+// Show success toast if redirected back after form submission
+if (new URLSearchParams(window.location.search).get('success') === 'true') {
+  const toast = document.createElement('div');
+  toast.className = 'nf-toast';
+  toast.innerHTML = '<i class="fa-solid fa-circle-check"></i> Request sent! I\'ll be in touch soon.';
+  document.body.appendChild(toast);
+  history.replaceState(null, '', window.location.pathname);
+  setTimeout(() => toast.classList.add('nf-toast-show'), 50);
+  setTimeout(() => {
+    toast.classList.remove('nf-toast-show');
+    setTimeout(() => toast.remove(), 400);
+  }, 5000);
+}
+
 const modal = document.getElementById('contact-modal');
 const openBtn = document.getElementById('contact-btn');
 const closeBtn = document.getElementById('modal-close');

@@ -35,16 +35,13 @@
     <div class="modal-wrapper">
       <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
       <div class="modal-box">
-        <form class="support-form" id="support-form" action="https://submit.jotform.com/submit/261205147865054" method="post" enctype="multipart/form-data" accept-charset="utf-8" autocomplete="on">
+        <form class="support-form" id="support-form" action="https://api.web3forms.com/submit" method="post" enctype="multipart/form-data">
 
-          <!-- Hidden fields required by Jotform -->
-          <input type="hidden" name="formID" value="261205147865054">
-          <input type="hidden" name="jsExecutionTracker" value="build-date-1777910538615">
-          <input type="hidden" name="submitSource" value="unknown">
-          <input type="hidden" name="buildDate" value="1777910538615">
-          <input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload">
-          <input type="hidden" name="simple_spc" value="261205147865054">
-          <input type="text" name="website" value="" style="display:none" tabindex="-1" autocomplete="off">
+          <!-- Web3Forms config -->
+          <input type="hidden" name="access_key" value="0d179e04-b535-4d61-8742-62f868dcbff7">
+          <input type="hidden" name="subject" value="New Remote Support Request">
+          <input type="hidden" name="redirect" value="https://tylerawak.net/support?success=true">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
           <div class="nf-header">
             <h2>Remote Support Request</h2>
@@ -53,13 +50,13 @@
 
           <div class="nf-group">
             <label for="nf-email">Email Address <span class="nf-req">*</span></label>
-            <input type="email" id="nf-email" name="q4_q4_email2" placeholder="example@example.com" required>
+            <input type="email" id="nf-email" name="email" placeholder="example@example.com" required>
           </div>
 
           <div class="nf-row">
             <div class="nf-group">
               <label for="nf-device">Device Type</label>
-              <select id="nf-device" name="q5_q5_dropdown3">
+              <select id="nf-device" name="Device Type">
                 <option value="">Please Select</option>
                 <option value="Windows PC">Windows PC</option>
                 <option value="Mac">Mac</option>
@@ -70,7 +67,7 @@
             </div>
             <div class="nf-group">
               <label for="nf-tool">Preferred Remote Support Tool</label>
-              <select id="nf-tool" name="q6_q6_dropdown4">
+              <select id="nf-tool" name="Preferred Tool">
                 <option value="">Please Select</option>
                 <option value="Quick Assist (Windows only)">Quick Assist (Windows only)</option>
                 <option value="HelpWire">HelpWire</option>
@@ -82,13 +79,13 @@
 
           <div class="nf-group">
             <label for="nf-issue">Issue Description</label>
-            <textarea id="nf-issue" name="q9_q9_textarea7" rows="5" placeholder="Describe your issue..."></textarea>
+            <textarea id="nf-issue" name="Issue Description" rows="5" placeholder="Describe your issue..."></textarea>
           </div>
 
           <div class="nf-row">
             <div class="nf-group">
               <label for="nf-urgency">Urgency</label>
-              <select id="nf-urgency" name="q10_q10_dropdown8">
+              <select id="nf-urgency" name="Urgency">
                 <option value="">Please Select</option>
                 <option value="Low">Low</option>
                 <option value="Medium">Medium</option>
@@ -98,7 +95,7 @@
             </div>
             <div class="nf-group">
               <label for="nf-contact-time">Preferred Contact Time</label>
-              <input type="text" id="nf-contact-time" name="q11_q11_textbox9" placeholder="e.g. Weekdays after 5 pm">
+              <input type="text" id="nf-contact-time" name="Preferred Contact Time" placeholder="e.g. Weekdays after 5 pm">
             </div>
           </div>
 
@@ -110,7 +107,7 @@
             <label class="nf-file-label" for="nf-upload">
               <i class="fa-solid fa-arrow-up-from-bracket"></i>
               <span id="nf-file-text">Choose files&hellip;</span>
-              <input type="file" id="nf-upload" name="q14_uploadImages[]" multiple accept=".jpg,.jpeg,.png,.gif">
+              <input type="file" id="nf-upload" name="attachment" multiple accept=".jpg,.jpeg,.png,.gif">
             </label>
           </div>
 
