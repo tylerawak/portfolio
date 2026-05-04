@@ -403,37 +403,34 @@ kbd {
   color: var(--text-dim);
 }
 
-/* Success toast */
-.nf-toast {
-  position: fixed;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(2rem);
-  background: var(--second-bg-color);
-  border: 1px solid rgba(255, 64, 0, 0.4);
-  border-radius: 1rem;
-  padding: 1.4rem 2.4rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--text-color);
+/* Success state */
+.nf-success {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 999;
-  white-space: nowrap;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 3rem;
+  gap: 1.8rem;
+  min-height: 30rem;
 }
 
-.nf-toast i {
+.nf-success i {
+  font-size: 5rem;
   color: var(--main-color);
-  font-size: 1.6rem;
 }
 
-.nf-toast-show {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+.nf-success h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.nf-success p {
+  font-size: 1.5rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  max-width: 38rem;
 }
 
 /* Responsive */
